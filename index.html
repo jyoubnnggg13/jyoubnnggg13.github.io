@@ -46,10 +46,6 @@
 		  document.execCommand("Copy");
 		  alert('연락처가 복사되었습니다.');
 		}
-	
-	$("i .bxs-phone").click(function(){
-		copy_to_clipboard();
-	});
 </script>
 
 <body>
@@ -80,7 +76,7 @@
       <div class="social-links">
         <a href="https://www.instagram.com/22310_166/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="mailto:﻿jyb00003@gmail.com" class="gmail"><i class='bx bxl-gmail'></i></a>
-        <a href="#" id="digit"><i class='bx bxs-phone'></i></a>
+        <a href="#" id="digit" onclick="copy_to_clipboard()"><i class='bx bxs-phone'></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
