@@ -40,14 +40,14 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
 	function copy_to_clipboard() {    
-		  var copyText = document.getElementById('digit');
+		  var copyText = "01074503606";
 		  copyText.select();
 		  copyText.setSelectionRange(0, 99999);
 		  document.execCommand("Copy");
 		  alert('연락처가 복사되었습니다.');
 		}
 	
-	$("#digit").click(function(){
+	$("i .bxs-phone").click(function(){
 		copy_to_clipboard();
 	});
 </script>
