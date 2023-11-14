@@ -38,6 +38,15 @@
   ======================================================== -->
 </head>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function copy_to_clipboard() {    
+		  var copyText = document.getElementById('digit');
+		  copyText.select();
+		  copyText.setSelectionRange(0, 99999);
+		  document.execCommand("Copy");
+		  alert('연락처가 복사되었습니다.');
+		}
+</script>
 
 <body>
 
@@ -51,7 +60,7 @@
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>홈</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>소개</span></a></li>
-        <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>포트폴리오</span></a></li>
+        <li><a href="#testimonials" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>프로젝트</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class='bx bxs-briefcase' ></i> <span>경력 및 교육</span></a></li>
         <li><a href="#services" class="nav-link scrollto"><i class='bx bx-spreadsheet'></i> <span>자격사항</span></a></li>
       </ul>
@@ -66,8 +75,8 @@
       <p><span class="typed" data-typed-items="Portfolio, 포트폴리오, ポートフォリオ"></span></p>
       <div class="social-links">
         <a href="https://www.instagram.com/22310_166/" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://github.com/jyoubnnggg13" class="google-plus"><i class='bx bxl-github'></i></a>
         <a href="mailto:﻿jyb00003@gmail.com" class="gmail"><i class='bx bxl-gmail'></i></a>
+        <a href="#" id="digit"><i class='bx bxs-phone'></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
@@ -140,7 +149,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>포트폴리오</h2>
+          <h2>프로젝트</h2>
         </div>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
