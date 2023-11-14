@@ -46,6 +46,10 @@
 		  document.execCommand("Copy");
 		  alert('연락처가 복사되었습니다.');
 		}
+	
+	$("#digit").click(function(){
+		copy_to_clipboard();
+	});
 </script>
 
 <body>
@@ -131,16 +135,12 @@
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg mb-5">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>기술</h2>
+        	기술스택
         </div>
-
-        <div class="row skills-content">
-			<h2>기술 나열할 공간</h2>
-
-        </div>
-
+		<div>
+			<img alt="이미지 불러오기 실패" src="assets/img/skills.png">
+		</div>
       </div>
     </section><!-- End Skills Section -->
 
@@ -149,9 +149,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-        	<img alt="이미지 불러오기 실패" src="assets/img/skills.png">
+        	프로젝트
         </div>
-
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
 
