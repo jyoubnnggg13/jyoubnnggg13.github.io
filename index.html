@@ -39,13 +39,14 @@
 </head>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
-	function copy_to_clipboard() {    
-		  var copyText = "01074503606";
-		  copyText.select();
-		  copyText.setSelectionRange(0, 99999);
-		  document.execCommand("Copy");
-		  alert('연락처가 복사되었습니다.');
-		}
+	function copyToClipboard(val) {
+	    var t = document.createElement("textarea");
+	    document.body.appendChild(t);
+	    t.value = val;
+	    t.select();
+	    document.execCommand('copy');
+	    document.body.removeChild(t);
+	    }
 </script>
 
 <body>
@@ -76,7 +77,7 @@
       <div class="social-links">
         <a href="https://www.instagram.com/22310_166/" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="mailto:﻿jyb00003@gmail.com" class="gmail"><i class='bx bxl-gmail'></i></a>
-        <a href="#" id="digit" onclick="copy_to_clipboard()"><i class='bx bxs-phone'></i></a>
+        <a href="#" id="digit" onclick="copyToClipboard('01074503606')"><i class='bx bxs-phone'></i></a>
       </div>
     </div>
   </section><!-- End Hero -->
